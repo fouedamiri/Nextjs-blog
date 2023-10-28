@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./writePage.module.css";
+import dynamic from "next/dynamic";
 
 
 import "react-quill/dist/quill.bubble.css";
