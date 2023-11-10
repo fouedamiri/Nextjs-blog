@@ -5,7 +5,9 @@ import Pagination from "../pagination/Pagination";
 
 const getData = async (page, cat) => {
   const res = await fetch(
-    `http://localhost:3000/api/posts?page=${page}&cat=${cat || ""}`,
+    `https://nextjs-blog-ndy3.vercel.app/api/posts?page=${page}&cat=${
+      cat || ""
+    }`,
     {
       cache: "no-store",
     }
