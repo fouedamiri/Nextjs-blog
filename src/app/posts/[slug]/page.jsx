@@ -5,7 +5,7 @@ import Comments from "@/components/comments/Comments";
 
 const getData = async (slug) => {
   const res = await fetch(
-    `https://nextjs-blog-ndy3.vercel.app/api/posts/${slug}`,
+    `https://nextjs-blog-lake-one-19.vercel.app/api/posts/${slug}`,
     {
       cache: "no-store",
     }
