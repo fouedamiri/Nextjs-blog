@@ -23,14 +23,14 @@ const fetcher = async (url) => {
 const Comments = ({ postSlug }) => {
   const { status } = useSession();
   const { data, mutate, isLoading } = useSWR(
-    `https://nextjs-blog-ndy3.vercel.app/api/comments?postSlug=${postSlug}`,
+    `https://nextjs-blog-lake-one-19.vercel.app/api/comments?postSlug=${postSlug}`,
     fetcher
   );
 
   const [desc, setDesc] = useState("");
 
   const handleSubmit = async () => {
-    await fetch("https://nextjs-blog-ndy3.vercel.app/api/comments", {
+    await fetch("https://nextjs-blog-lake-one-19.vercel.app/api/comments", {
       method: "POST",
       body: JSON.stringify({ desc, postSlug }),
     });
